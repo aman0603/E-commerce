@@ -17,7 +17,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
     alert('Proceeding to checkout...');
     onClose();
   };
-
+  
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Product } from '../types';
-
+import { useCartStore } from '../store/cart';
 interface ProductCardProps {
   product: Product;
   onClick: () => void;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
+  const addToCart = useCartStore((state) => state.addToCart);
   return (
     <div
       className="bg-white rounded-lg overflow-hidden cursor-pointer group"
@@ -36,7 +37,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
         </div>
         <div className="flex items-center justify-between">
           <span className="text-lg font-bold">${product.price}</span>
-          <button className="bg-black text-white px-4 py-2 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+          <button 
+          onClick={() => {
+            addToCart();            
+          }}className="bg-black text-white px-4 py-2 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-opacity">
             Add to Cart
           </button>
         </div>
