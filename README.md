@@ -100,12 +100,6 @@ E-comm/
 - Implement a full-fledged shopping cart with item removal and quantity adjustment.
 - Improve UI with animations and better user experience.
 
-## License
-This project is open-source and free to use under the [MIT License](LICENSE).
-
 ## Author
 Developed by **Aman Paswan**. If you have any questions, feel free to reach out!
-
----
-This README provides all necessary details for installation, project structure, and future improvements. Let me know if you'd like any modifications! 🚀
 
