@@ -92,7 +92,6 @@ E-comm/
 ### Challenges
 - Managing API responses efficiently and handling loading states.
 - Ensuring smooth responsiveness across all devices.
-- Improving accessibility (ARIA attributes for screen readers).
 
 ### Future Improvements
 - Implement a global state management solution (e.g., Redux Toolkit, Zustand).
